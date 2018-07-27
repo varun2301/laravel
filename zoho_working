@@ -1,0 +1,50 @@
+================================= Zoho Reference Link ============================
+https://www.zoho.com/projects/help/rest-api/zohoprojectsapi.html
+
+
+CLIENT_ID = 1000.XOVIBM04T1AA32825X5ARSI5B9IQUU
+CLIENT_SECRET_KEY = 5a6ffdf1382108e6e7ca4c743b8371ded05275ad7f
+
+http://hestalabs.com/testZoho
+
+
+========================To Generate code in 1 hour by opening this in browser=====================
+https://accounts.zoho.com/oauth/v2/auth?scope=ZohoProjects.portals.READ,ZohoProjects.projects.ALL,ZohoProjects.activities.READ,ZohoProjects.status.READ,ZohoProjects.status.CREATE,ZohoProjects.milestones.ALL,ZohoProjects.tasklists.ALL,ZohoProjects.tasks.ALL,ZohoProjects.timesheets.ALL,ZohoProjects.bugs.ALL,ZohoProjects.events.ALL,ZohoProjects.forums.ALL,ZohoProjects.users.ALL&client_id=1000.XOVIBM04T1AA32825X5ARSI5B9IQUU&response_type=code&access_type=online&redirect_uri=http://hestalabs.com/testZoho&prompt=consent
+
+
+http://hestalabs.com/testZoho/?code=1000.253b25306cf1c570a6dba03d8bba15f7.15fc80a22c8cc25148fbf3c16fb5e931&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com&
+
+
+http://hestalabs.com/testZoho/?code=1000.89fde33f91fb291ac3f09edbbf3abd33.8e9d95f13c1f435cc8ea731ce6cef430&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com
+
+================ Here is the code to be used further ===================================
+http://hestalabs.com/testZoho/?code=1000.160dbcb8b98ceb24d234f6643c4567ba.ea1caaa4333fbd44ac106ab36b8ecb03&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com&
+
+
+
+====================== Generate access token by hitting this through postman ======================
+https://accounts.zoho.com/oauth/v2/token?code=1000.89fde33f91fb291ac3f09edbbf3abd33.8e9d95f13c1f435cc8ea731ce6cef430&redirect_uri=http://hestalabs.com/testZoho&client_id=1000.CBV29E75H1WU07774LVR6A3R65ZWUU&client_secret=209f246e95f2364a5da305351e82c6cce5dab9d90b&grant_type=authorization_code
+
+
+
+===================== Access token generated ====================================
+{
+    "access_token": "1000.ea34387d2fb11fdaf7ab2b95942704c1.6ea402b8c8e6e2d1ee326a5222613fbc",
+    "expires_in_sec": 3600,
+    "api_domain": "https://www.zohoapis.com",
+    "token_type": "Bearer",
+    "expires_in": 3600000
+}
+
+
+================================ Base Url to hit any API ==========================
+https://projectsapi.zoho.com/restapi/
+
+
+========================== header format to be passed with each API request =======================
+Authorization       :       Zoho-oauthtoken {access_token}
+{key}                       {value}
+
+
+=========================== Hestabit Portal Id ============================
+Portal Id :- 633531303
